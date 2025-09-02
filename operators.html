@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Arithmatic operators : +,-,*,/,%,++,--,** -->
+
+    <script>
+        var a = 10;
+        var b = 3;
+        var c = a+b;
+
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;
+
+
+        document.write(c)
+
+</script>
+
+<!-- Assignment operators : +=,-=,*=,/=,**= %= -->
+<br>
+<script>
+
+    var x = 10;
+    var y = 3;
+    x+=y;
+
+    document.write(x);
+    document.write("<br>");
+    document.write(y);
+    document.write("<br>");
+
+</script>
+<br>
+<!-- comparisons operator  ==,===,<,><=.>=.!=-->
+<script>
+
+    var p = 10;
+    var q = "10";
+
+    if(p===q){
+        document.write("true");
+    }else{
+        document.write("false");
+    }
+
+
+</script>
+<!-- logical operators : AND (||), OR ,NOT(!) -->
+ <br>
+<script>
+
+    var age = 100;
+    if(age>=18 && age<=100){
+        document.write("eligible for vote");
+
+    }else{
+        document.write("not Elegible for Vote");
+    }
+
+    var day = "monday";
+    if(day==="saturday" || day === "sunday"){
+        document.write(" its weekend");
+    }else{
+        document.write(" its weekdays");
+    }
+
+</script>
+<br>
+<!-- turnary operators -->
+<script>
+    var age = 18;
+    var eligibility = (age>18) ? "Eligible For Vote" : "NOT Eligible";
+    document.write(eligibility);
+</script>
+
+</body>
+</html>
