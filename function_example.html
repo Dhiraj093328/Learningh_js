@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/function_example.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-6 m-6 p-6">
+                <section>
+                    <h1>Simple Calculator</h1>
+                    <form name="myform" class="border border-3 rounded-4 border-dark p-6 m-4 ">
+
+
+                        <div class="mb-3 p-4 m-4">
+                            <label for="n1" class="form-label"><b>Num 1</b></label>
+                            <input type="number" name="n1" class="form-control border border-3 border-dark">
+                        </div>
+
+
+                        <div class="mb-3 p-4 m-4">
+                            <label for="n2" class="form-label"><b>Num 2</b></label>
+                            <input type="number" name="n2" class="form-control border border-3 border-dark">
+                        </div>
+
+
+                        <div class="row">
+                            <div class="text-center">
+                                <button class="btn btn-primary m-2" type="button" onclick="add()"><b>+</b></button>
+                                <button class="btn btn-primary m-2" type="button" onclick="sub()"><b>-</b></button>
+                                <button class="btn btn-primary m-2" type="button"onclick="multi()"><b>*</b></button>
+                                <button class="btn btn-primary m-2" type="button"onclick="div()"><b>/</b></button>
+                                <button class="btn btn-primary m-2" type="reset"><b>Reset</b></button>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 p-4 m-4">
+                            <label for="res" class="form-label"><b>Result</b></label>
+                            <input type="number" name="res" class="form-control border border-3 border-dark">
+                        </div>
+
+                    </form>
+                </section>
+
+                <script>
+                    var n1,n,result;
+                    function add()
+                    {
+                        n1=Number(document.myform.n1.value);
+                        n2=Number(document.myform.n2.value);
+                        result=n1+n2;
+                        document.myform.res.value=result.toFixed(2);
+
+                    }
+                    function sub()
+                    {
+                        n1=Number(document.myform.n1.value);
+                        n2=Number(document.myform.n2.value);
+                        result=n1-n2;
+                        document.myform.res.value=result.toFixed(2);
+
+                    }
+
+                    function multi()
+                    {
+                        n1=Number(document.myform.n1.value);
+                        n2=Number(document.myform.n2.value);
+                        result=n1*n2;
+                        document.myform.res.value=result.toFixed(2);
+
+                    }
+
+                    function div()
+                    {
+                        n1=Number(document.myform.n1.value);
+                        n2=Number(document.myform.n2.value);
+                        result=n1/n2;
+                        document.myform.res.value=result.toFixed(2);
+
+                    }
+
+
+
+
+                </script>
+
+
+
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

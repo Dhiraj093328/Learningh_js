@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mixArray =[100,"Dhiraj",true,45.89];
+        var mixArray2 =[101,"karan",true,45.89];
+
+        document.write("<b>full array </b>"+ mixArray + mixArray2);
+    </script>
+
+    <script>
+        var array = [10,20,30,40,50,60,70,80,90,100];
+
+        // for loop start
+
+        sunFor=0;
+        document.write("<h2>Using For loop </h2><ul>")
+            for(var i=0; i<array.length;i++){
+                document.write("<li>"+ array[i] + "</li>")
+                sunFor +=array[i];
+            }
+            document.write("</ul>")
+            document.write("Total sum Using for loop = " + sunFor + "<hr>" )
+
+            //while loop start
+
+            sunwhile = 0;
+            var j = 0;
+            document.write("<li>"+array[j] + "</li>")
+            while( j<array.length){
+            sunwhile +=array[j];
+            j++;
+            }
+
+            document.write("</ul>")
+            document.write("Total sum Using while loop = " + sunwhile + "<hr>" )
+
+
+
+    </script>
+</body>
+</html>
