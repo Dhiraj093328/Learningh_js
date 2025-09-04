@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname:"Dhiraj",
+            lname:"waghmare",
+            age:"21",
+            email:"dhirajbabasahebwaghmare@gmail.com",
+            players: ['sachin', 'virat','youvraj','burman'],
+            address:{
+                'city': 'pune',//object within object
+                'country':'india'
+            },
+            phone : 7420070217
+        };
+        document.write(" My name is " +a.fname, " " +a.lname ,"<br> My age is : " +a.age ,"<br> My fav players is : " +a.players[2],
+            "<br> My address is : " +a.address.city);
+    </script>
+    <br><br>
+    <script>
+        var employee =[{ name: 'dhiraj',age:21,salary:45000},
+        { name: 'vishakha',age:45,salary:65000},
+        { name: 'vikas',age:51,salary:29000},
+        { name: 'tejas',age:29,salary:600000},
+        { name: 'shekhar',age:25,salary:4000},
+
+        ];
+        console.log(employee);
+        for(let a=0; a<employee.length;a++){
+            document.write(employee[a].name + employee[a].age + employee[a].salary + "<br>");
+        }
+    </script>
+</body>
+</html>
